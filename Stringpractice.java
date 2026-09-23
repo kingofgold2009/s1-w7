@@ -9,8 +9,7 @@ public class Stringpractice{
 
         if (last.length() <= 3){
             return a + b + c + d; 
-        }
-        
+        } 
         return e + b + c + d;
        
     }

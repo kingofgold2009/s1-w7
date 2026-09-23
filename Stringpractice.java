@@ -13,5 +13,15 @@ public class Stringpractice{
         return e + b + c + d;
        
     }
-    
+    public String undoLatin(String word){
+        if(word.length() > 2){
+            return word.substring(0,2);
+        }
+        return word.substring(2,3) + word.substring(0,2);
+    }
+        
+    public String textify (String word, String targetLetter, String replacementCharacter){
+    int a = word.indexOf(targetLetter);
+return word.substring(0, a) +  replacementCharacter + word.substring(word.indexOf(a-1));
+    }
 }
